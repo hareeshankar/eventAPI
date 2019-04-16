@@ -38,5 +38,13 @@
   "events": {
     "dataSource": "db",
     "public": true
+  },
+  "Transactions": {
+    "dataSource": "db",
+    "public": true
+  },
+  "todos": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,24 +1,28 @@
 {
-  "name": "events",
+  "name": "Transactions",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "eventname": {
+    "vendor": {
       "type": "string",
       "required": true
     },
-    "eventdate": {
+    "details": {
+      "type": "string",
+      "required": true
+    },
+    "tdate": {
       "type": "date",
       "required": true
     },
-    "eventloc": {
-      "type": "string",
+    "amount": {
+      "type": "number",
       "required": true
     },
-    "eventdes": {
+    "flow": {
       "type": "string",
       "required": true
     },
@@ -29,13 +33,6 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }
